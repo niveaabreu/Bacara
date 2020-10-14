@@ -107,3 +107,58 @@ else :
 
     
     elif jogadores == 2:
+        aposta_jog1 = int(input("Quanto quer apostar, {0}? ".format(jogador1)))
+        while aposta_jog1>ficha1:
+            print("Você não possui fichas suficientes. Seu saldo é {0}".format(ficha1))
+            aposta_jog1 = int(input("Quanto quer apostar, {0}? ".format(jogador1)))
+        pers_apost_jog1 = input("Em quem vai apostar? Digite 0 para jogador, 1 para banco ou 2 para empate: ")
+
+        aposta_jog2 = int(input("Quanto quer apostar, {0}? ".format(jogador2)))
+        while aposta_jog2>ficha2:
+            print("Você não possui fichas suficientes. Seu saldo é {0}".format(ficha2))
+            aposta_jog2 = int(input("Quanto quer apostar, {0}? ".format(jogador2)))
+        pers_apost_jog2 = input("Em quem vai apostar? Digite 0 para jogador, 1 para banco ou 2 para empate: ")
+
+    elif jogadores == 3:
+        aposta_jog1 = int(input("Quanto quer apostar, {0}? ".format(jogador1)))
+        while aposta_jog1>ficha1:
+            print("Você não possui fichas suficientes. Seu saldo é {0}".format(ficha1))
+            aposta_jog1 = int(input("Quanto quer apostar, {0}? ".format(jogador1)))
+        pers_apost_jog1 = input("Em quem vai apostar? Digite 0 para jogador, 1 para banco ou 2 para empate: ")
+        print ("  ")
+        
+        aposta_jog2 = int(input("Quanto quer apostar, {0}? ".format(jogador2)))
+        while aposta_jog2>ficha2:
+            print("Você não possui fichas suficientes. Seu saldo é {0}".format(ficha2))
+            aposta_jog2 = int(input("Quanto quer apostar, {0}? ".format(jogador2)))
+        pers_apost_jog2 = input("Em quem vai apostar? Digite 0 para jogador, 1 para banco ou 2 para empate: ")
+        print ("  ")
+        
+        aposta_jog3 = int(input("Quanto quer apostar, {0}? ".format(jogador3)))
+        while aposta_jog3>ficha3:
+            print("Você não possui fichas suficientes. Seu saldo é {0}".format(ficha3))
+            aposta_jog3 = int(input("Quanto quer apostar, {0}? ".format(jogador3)))
+        pers_apost_jog3 = input("Em quem vai apostar? Digite 0 para jogador, 1 para banco ou 2 para empate: ")
+    else :
+        print ("  ")
+
+    #Distribuindo cartas para os jogadores
+    c1=randint(0,len(cartas))
+    if jogadores == 1 :
+        cartas1_1 = cartas [c1]
+        print (cartas1_1)
+        del cartas [c1]
+        c2=randint(0,len(cartas))
+        cartas1_2 = cartas [c2]
+        print(cartas1_2)
+        cartas.append(cartas[c1])         
+        random.shuffle(cartas)    
+    elif jogadores == 2:
+        cartas1_1= cartas [c1]
+        print(cartas1_1)
+        del cartas [c1]
+        c2=randint(0,len(cartas))
+        cartas1_2=cartas[c2]
+        print(cartas1_2)
+        cartas.append(cartas[c1])
+        random.shuffle(cartas)
