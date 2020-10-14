@@ -162,3 +162,72 @@ else :
         print(cartas1_2)
         cartas.append(cartas[c1])
         random.shuffle(cartas)
+        c3=randint(0,len(cartas))
+        cartas2_1=cartas[c3]
+        print(cartas2_1)
+        del cartas[c3]
+        c4=randint(0,len(cartas))
+        cartas2_2=cartas[c4]
+        print(cartas2_2)
+        cartas.append(cartas[c3])
+    elif jogadores ==3:
+        cartas1_1= cartas [c1]
+        print(cartas1_1)
+        del cartas [c1]
+        c2=randint(0,len(cartas))
+        cartas1_2=cartas[c2]
+        print(cartas1_2)
+        cartas.append(cartas[c1])
+        random.shuffle(cartas)
+        c3=randint(0,len(cartas))
+        cartas2_1=cartas[c3]
+        print(cartas2_1)
+        del cartas[c3]
+        c4=randint(0,len(cartas))
+        cartas2_2=cartas[c4]
+        print(cartas2_2)
+        cartas.append(cartas[c3])
+        c5=randint(0,len(cartas))
+        cartas3_1=cartas[c5]
+        print(cartas3_1)
+        del cartas[c5]
+        c6=randint(0,len(cartas))
+        cartas3_2=cartas[c6]
+        print(cartas3_2)
+        cartas.append(cartas[c5])
+    else:
+        print("  ")
+    
+    #soma das cartas
+    if soma==8 or soma==9:
+            print("   ")
+            print("Empate!")
+     elif soma>=10:
+           ab=10*a+b
+           soma=b
+           print("soma")
+        if soma!=8 or soma !=9:
+            #jogador2
+            elif  soma_jogador2==6 or soma_jogador2==7
+            print("Sem cartas!"
+            #banco 
+            i=0
+            soma_banco=0
+            while soma_banco:
+            elif soma_banco<=5:
+                soma_banco+=
+    
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
