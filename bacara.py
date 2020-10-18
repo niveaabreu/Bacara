@@ -313,3 +313,47 @@ else :
             time.sleep(0.7)
             print ("Soma de {0}: ".format(jogador3), soma3)
         
+        #Soma banco
+        somab=cartasb1+cartasb2
+        if somab>=10:
+            somab=somab-10
+        if somab>=20:
+            somab=somab-20
+        time.sleep(0.7)
+        print ("Soma do banco: ", somab)
+        print("  ")
+
+        #Regras de distribuição da terceira carta
+        if soma1<=5:
+            time.sleep(0.7)
+            print("{0}, você tem direito a mais uma carta!".format(jogador1))
+            print("  ")
+            c7=randint(0,len(cartas))
+            cartas1_3= cartas [c7]
+            time.sleep(0.7)
+            print("Terceira carta de {0}: ".format(jogador1), cartas1_3)
+            soma1=soma1+cartas1_3
+            if soma1>=10:
+                soma1=soma1-10
+            if soma1>=20:
+                soma1=soma1-20
+            time.sleep(0.7)
+            print("Soma final de {0}: ".format(jogador1),soma1)
+            print("  ")
+        
+        if jogadores==2:
+            if soma2<=5:
+                time.sleep(0.7)
+                print("{0}, você tem direito a mais uma carta!".format(jogador2))
+                print("  ")
+                c8=randint(0,len(cartas))
+                cartas2_3= cartas [c8]
+                time.sleep(0.7)
+                print("Terceira carta de {0}: ".format(jogador2), cartas2_3)
+                soma2=soma2+cartas2_3
+                if soma2>=10:
+                    soma2=soma2-10
+                if soma2>=20:
+                    soma2=soma2-20
+                time.sleep(0.7)
+                print("Soma final de {0}: ".format(jogador2),soma2)
