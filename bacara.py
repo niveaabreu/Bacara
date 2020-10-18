@@ -243,3 +243,73 @@ else :
             random.shuffle(cartas)
         else:
             print("  ")
+        
+        #Distribuição das cartas do banco
+        print("  ")
+        cb = randint(0,len(cartas))
+        cartasb1 = cartas[cb]
+        time.sleep(0.7)
+        print("Primeira carta do banco: ", cartasb1)
+        del cartas[cb]
+        cb2 = randint(0,len(cartas))
+        cartasb2 = cartas[cb2]
+        time.sleep(0.7)
+        print("Segunda carta do banco: ", cartasb2)
+        cartas.append(cartas[cb])
+        random.shuffle(cartas)
+        print("  ")
+
+        #soma das cartas
+        if jogadores == 1:
+            soma1=cartas1_1+cartas1_2
+            if soma1>=10 :
+                soma1= soma1-10
+            if soma1>=20:
+                soma1=soma1-20
+            time.sleep(0.7)
+            print ("Soma de {0}: ".format(jogador1), soma1)
+            
+        elif jogadores == 2:
+            soma1=cartas1_1+cartas1_2
+            if soma1>=10 :
+                soma1= soma1-10
+            if soma1>=20:
+                soma1=soma1-20
+            time.sleep(0.7)
+            print ("Soma de {0}: ".format(jogador1), soma1)
+    
+            soma2 = cartas2_1 + cartas2_2
+            if soma2>=10:
+                soma2=soma2-10
+            if soma2>=20:
+                soma2=soma2-20
+            time.sleep(0.7)
+            print ("Soma de {0}: ".format(jogador2), soma2)
+            
+        
+        elif jogadores == 3:
+            soma1=cartas1_1+cartas1_2
+            if soma1>=10 :
+                soma1= soma1-10
+            if soma1>=20:
+                soma1=soma1-20
+            time.sleep(0.7)
+            print ("Soma de {0}: ".format(jogador1), soma1)
+    
+            soma2=cartas2_1+cartas2_2
+            if soma2>=10:
+                soma2=soma2-10
+            if soma2>=20:
+                somab2=soma2-20
+            time.sleep(0.7)
+            print ("Soma de {0}: ".format(jogador2), soma2)
+            
+    
+            soma3=cartas3_1+cartas3_2
+            if soma3>=10:
+                soma3=soma3-10
+            if soma3>=20:
+                soma3=soma3-20
+            time.sleep(0.7)
+            print ("Soma de {0}: ".format(jogador3), soma3)
+        
