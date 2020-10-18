@@ -671,3 +671,30 @@ else :
                     if baralhos == 8:
                         ficha1=int(ficha1+aposta_jog1-(1.24/100)*aposta_jog1)
                         print ("{0}, você venceu! Fichas: {1}".format(jogador1, ficha1))
+                
+                if pers_apost_jog1 == 1:
+                    ficha1=ficha1-aposta_jog1
+                    print("{0}, você perdeu a aposta! Fichas restantes: {1}".format(jogador1,ficha1))
+
+                if pers_apost_jog1 == 2:
+                    ficha1=ficha1-aposta_jog1
+                    print("{0}, você perdeu a aposta! Fichas restantes: {1}".format(jogador1,ficha1))
+            
+            if soma2<somab :
+                if pers_apost_jog2 == 0:
+                    ficha2=ficha2-aposta_jog2
+                    print("{0}, você perdeu a aposta! Fichas restantes: {1}".format(jogador2,ficha2))
+                if pers_apost_jog2 == 1:
+                    if baralhos == 1:
+                        ficha2=int(ficha2+0.95*aposta_jog2-(1.01/100)*0.95*aposta_jog2)
+                        print ("{0}, você venceu! Fichas: {1}".format(jogador2, ficha2))
+                    if baralhos == 6:
+                        ficha2=ficha2+0.95*aposta_jog2-(1.06/100)*0.95*aposta_jog2
+                        print ("{0}, você venceu! Fichas: {1}".format(jogador2, ficha2))
+                    if baralhos == 8:
+                        ficha2=int(ficha2+0.95*aposta_jog2-(1.06/100)*0.95*aposta_jog2)
+                        print ("{0}, você venceu! Fichas: {1}".format(jogador2, ficha2))
+            
+                if pers_apost_jog2 == 2:
+                    ficha2=ficha2-aposta_jog2
+                    print("{0}, você perdeu a aposta! Fichas restantes:{1}".format(jogador2, ficha2))
