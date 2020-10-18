@@ -759,3 +759,29 @@ else :
                         ficha3=int(ficha3+0.95*aposta_jog3-(1.06/100)*0.95*aposta_jog3)
                         print("{0}, você venceu! Fichas: {1}".format(jogador3,ficha3))
                     
+
+                if pers_apost_jog3 == 2:
+                    ficha3=ficha3-aposta_jog3
+                    print("{0}, você perdeu a aposta! Fichas restantes: {1}" .format(jogador3,ficha3))
+
+            if soma3==somab:
+                if pers_apost_jog3 == 0:
+                    ficha3=ficha3-aposta_jog3
+                    print("Empate! {0}, você perdeu a aposta! Fichas restantes: {1}".format(jogador3, ficha3))
+
+                if pers_apost_jog3 == 1:
+                    ficha3=ficha3-aposta_jog3
+                    print("Empate! {0}, você perdeu a aposta! Fichas restantes: {1}".format(jogador3,ficha3))
+
+                if pers_apost_jog3 == 2:
+                    if baralhos == 1:
+                        ficha3=int(ficha3+8*aposta_jog3-(15.75/100)*8*aposta_jog3)
+                        print("Empate! {0}, você venceu! Fichas: {1}".format(jogador3,ficha3))
+
+                    if baralhos == 6:
+                        ficha3=int(ficha3+8*aposta_jog3-(14.44/100)*8*aposta_jog3)
+                        print("Empate! {0}, você venceu! Fichas: {1}".format(jogador3, ficha3))
+                    
+                    if baralhos == 8:
+                        ficha3=int(ficha3+8*aposta_jog3-(14.36/100)*8*aposta_jog3)
+                        print("Empate! {0}, você venceu! Fichas: {1}".format(jogador3, ficha3))
